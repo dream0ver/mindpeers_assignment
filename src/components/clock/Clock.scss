@@ -1,0 +1,71 @@
+.container-card {
+  transform: scale(1.75);
+  height: 350px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: #212121;
+  position: relative;
+  button {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    height: 32px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #393939;
+    box-shadow: 0px 2px 24px 0px #0000001a;
+    color: #e1e1e1;
+    background-color: #393939;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+  }
+  h1 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-align: center;
+  }
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 1.75rem 1.25rem;
+    span {
+      position: absolute;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #e1e1e1;
+      z-index: 1;
+    }
+    span.night {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    span.morning {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2.5rem;
+    }
+    span.afternoon {
+      bottom: 0;
+    }
+    span.evening {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2.5rem;
+    }
+  }
+}
